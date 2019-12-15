@@ -1,0 +1,3 @@
+DEBUG=True
+SQLALCHEMY_DATABASE_URI='sqlite:///app/database/test.sqlite'
+SQLALCHEMY_TRACK_MODIFICATIONS=False
