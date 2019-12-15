@@ -16,6 +16,8 @@ MarkupSafe = "==1.1.1"
 SQLAlchemy = "==1.3.11"
 Werkzeug = "==0.16.0"
 bcrypt = "*"
+flask-wtf = "*"
+wtforms = "*"
 
 [requires]
 python_version = "3.8"

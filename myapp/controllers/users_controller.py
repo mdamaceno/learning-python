@@ -2,14 +2,15 @@ from flask import render_template, request, redirect
 import bcrypt
 from app import db
 from myapp.models.user import User
+from myapp.forms.signup import *
 
 def index():
   return render_template('home.html')
 
-def sign_in():
-  return render_template('sign_in.html')
+def signin():
+  return render_template('signin.html')
 
-def sign_up():
+def signup():
   if request.method == 'POST':
     user = User(
       name=request.form['name'],
@@ -20,7 +21,8 @@ def sign_up():
     db.session.add(user)
     db.session.commit()
 
-  return render_template('sign_up.html')
+  form = SignupForm()
+  return render_template('signup.html', form=form)
 
 def dashboard():
   return render_template('dashboard.html')

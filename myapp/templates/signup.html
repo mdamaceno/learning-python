@@ -1,0 +1,16 @@
+<html>
+  <meta charset="utf-8">
+  <body>
+    <h1>Sign up</h1>
+
+    <div>
+      <form action="/signup" method="post">
+        {{ form.hidden_tag() }}
+        {{ form.name() }}
+        {{ form.email() }}
+        {{ form.password() }}
+        <button type="submit" value="Signup" name="signup">Sign up</button>
+      </form>
+    </div>
+  </body>
+</html>
