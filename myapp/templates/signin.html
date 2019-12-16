@@ -1,16 +1,18 @@
-<html>
-  <meta charset="utf-8">
-  <body>
-    <h1>Sign in</h1>
+{% extends 'base.html' %}
 
-    <div>
-      <form action="/signin" method="post">
-        <input type="email" name="email" placeholder="Email">
-        <br>
-        <input type="password" name="password" placeholder="Password">
-        <br>
-        <input type="submit">
-      </form>
-    </div>
-  </body>
-</html>
+{% block head %}
+<title>Sign in</title>
+{% endblock %}
+
+{% block body %}
+<h1>Sign in</h1>
+
+<div>
+  <form action="/signup" method="post">
+    {{ form.hidden_tag() }}
+    {{ form.email() }}
+    {{ form.password() }}
+    <button type="submit" value="Signup" name="signup">Sign up</button>
+  </form>
+</div>
+{% endblock %}

@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "114a20b66f80e0a14502285f6c33be6da9057c178c4d6d063137f56cf150f98e"
+            "sha256": "657a779d6f39970d5957dc5038c6b248f2d82a9992d25451de0259819cb26192"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -94,6 +94,14 @@
             "index": "pypi",
             "version": "==1.1.1"
         },
+        "flask-inputs": {
+            "hashes": [
+                "sha256:25925517b04adce482aa2de2310a3d8b41aad8cbbc8b4e68aadf98443ab4a7af",
+                "sha256:61d43a4fd6fdcb6dbedfc8a158b8c8e2187b5d1e823eb1445a26e441b4efea2c"
+            ],
+            "index": "pypi",
+            "version": "==0.3.0"
+        },
         "flask-sqlalchemy": {
             "hashes": [
                 "sha256:0078d8663330dc05a74bc72b3b6ddc441b9a744e2f56fe60af1a5bfc81334327",
@@ -109,6 +117,12 @@
             ],
             "index": "pypi",
             "version": "==0.14.2"
+        },
+        "future": {
+            "hashes": [
+                "sha256:b1bead90b70cf6ec3f0710ae53a525360fa360d306a86583adc6bf83a4db537d"
+            ],
+            "version": "==0.18.2"
         },
         "itsdangerous": {
             "hashes": [
