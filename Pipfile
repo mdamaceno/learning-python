@@ -19,6 +19,7 @@ bcrypt = "*"
 flask-wtf = "*"
 wtforms = "*"
 flask-inputs = "*"
+flask-login = "*"
 
 [requires]
 python_version = "3.8"

@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'auth/base.html' %}
 
 {% block head %}
 <title>Sign in</title>
@@ -7,8 +7,16 @@
 {% block body %}
 <h1>Sign in</h1>
 
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+  <div class="notification is-danger">
+    {{ messages[0] }}
+  </div>
+{% endif %}
+{% endwith %}
+
 <div>
-  <form action="/signup" method="post">
+  <form action="/login" method="post">
     {{ form.hidden_tag() }}
     {{ form.email() }}
     {{ form.password() }}
